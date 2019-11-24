@@ -31,3 +31,32 @@ def draw_function(f, a, b, step):
     plt.xticks(x_ticks)
 
     plt.show()
+
+def draw_functions(a, b, step, *functions):
+    
+    x_ticks = list()
+    i = a
+    while i <= b:
+        x_ticks.append(i)
+
+        i += 1
+
+    plt.grid(True)
+    plt.xticks(x_ticks)
+
+    for function, function_name in functions:
+        x = list()
+        y = list()
+
+        i = a
+        while i <= b:
+            x.append(i)
+            y.append(function(i))
+
+            i += step
+
+        plt.plot(x, y, label=function_name)
+
+    plt.legend()
+
+    plt.show()
