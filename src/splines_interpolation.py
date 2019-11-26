@@ -1,38 +1,7 @@
-import math
-
 from scipy import linalg
 
 from function import *
-
-START = -4
-END = 4
-
-def sample_function(x):
-    return math.sin(x) + x
-
-def find_equally_spaced(start, end, n):
-    return [start + (end - start) * i / (n - 1) for i in range(n)]
-
-def find_chebyshev_nodes(start, end, n):
-    return [(start + end) / 2 + ((end - start) / 2) * math.cos((math.pi * (2 * i + 1)) / (2 * (n - 1) + 2)) \
-        for i in range(0, n)]
-
-def lagrange_interpolation(f, nodes):
-    def lagrange_polynom_function(x):
-        result = 0
-        
-        for i, node in enumerate(nodes):
-            sum_part = f(node)
-
-            for j in range(len(nodes)):
-                if i != j:
-                    sum_part *= (x - nodes[j]) / (node - nodes[j])
-
-            result += sum_part
-
-        return result
-
-    return lagrange_polynom_function
+from utils import *
 
 def spline_builder(alpha, beta, gamma, delta, xi):
 
@@ -88,28 +57,9 @@ def spline_interpolation(f, nodes):
 
     return spline_system_builder(splines, nodes)
 
-
 if __name__ == "__main__":
     equally_spaced_nodes = find_equally_spaced(START, END, 6)
-    chebyshev_nodes = find_chebyshev_nodes(START, END, 6)
 
-    # lagrange_polynom_from_equally_spaced_nodes = lagrange_interpolation(f, \
-    #     equally_spaced_nodes)
+    splines = spline_interpolation(f, equally_spaced_nodes)
 
-    # lagrange_polynom_from_chebyshev_nodes = lagrange_interpolation(f, \
-    #     chebyshev_nodes)
-
-    # draw_functions(START, END, 0.01, (lagrange_polynom_from_equally_spaced_nodes, "Lagrange polynom (equally spaced nodes)"), \
-    #     (f, "Function to interpolate"))
-
-    # draw_functions(START, END, 0.01, (lagrange_polynom_from_chebyshev_nodes, "Lagrange polynom (chebyshev nodes)"), \
-    #     (f, "Function to interpolate"))
-
-    # splines = spline_interpolation(f, equally_spaced_nodes)
-
-    # draw_functions(START, END, 0.01, (splines, "Splines"), (f, "Function to interpolate"))
-
-    
-
-
-
+    draw_functions(START, END, 0.01, (splines, "Splines"), (f, "Function to interpolate"))
