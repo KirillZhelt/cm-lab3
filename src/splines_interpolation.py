@@ -45,9 +45,10 @@ def spline_interpolation(f, nodes):
 
     gammas = [0] + gammas + [0]
 
-    alphas = [f(nodes[i]) for i in range(1, n + 1)]
+    y = [f(nodes[i]) for i in range(0, n + 1)]
+    alphas = [y[i] for i in range(1, n + 1)]
 
-    betas = [(alphas[i - 1] - alphas[i - 2]) / h[i - 1] + ((2 * gammas[i] + gammas[i - 1]) / 6) * h[i - 1] \
+    betas = [(y[i] - y[i - 1]) / h[i - 1] + ((2 * gammas[i] + gammas[i - 1]) / 6) * h[i - 1] \
         for i in range(1, n + 1)]
 
     deltas = [(gammas[i] - gammas[i - 1]) / h[i - 1] for i in range(1, n + 1)]
@@ -62,4 +63,6 @@ if __name__ == "__main__":
 
     splines = spline_interpolation(f, equally_spaced_nodes)
 
-    draw_functions(START, END, 0.01, (splines, "Splines"), (f, "Function to interpolate"))
+    print(splines(-4))
+
+    # draw_functions(START, END, 0.01, (splines, "Splines"), (f, "Function to interpolate"))
