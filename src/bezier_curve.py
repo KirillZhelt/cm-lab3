@@ -12,14 +12,17 @@ def combination(n, i):
 def bernstein_polynom(n, i, t):
     return combination(n, i) * (t ** i) * ((1 - t) ** (n - i))
 
-def find_bezier_curve(f, start, end, n):
+def find_bezier_curve(f, start, end, n, number_of_t):
     q1 = sorted([random.uniform(start, end) for i in range(n)])
     q2 = [f(q) for q in q1]
 
     bezier_y = [sum([bernstein_polynom(n, i, t) * q for i, q in enumerate(q2)])
-        for t in [i / n for i in range(n)]]
+        for t in [i / number_of_t for i in range(number_of_t)]]
 
-    return (q1, bezier_y)
+    bezier_x = [sum([bernstein_polynom(n, i, t) * q for i, q in enumerate(q1)])
+        for t in [i / number_of_t for i in range(number_of_t)]]
+
+    return (bezier_x, bezier_y)
 
 def draw_bezier_curve_with_function(bezier_curve_points, f, start, end, step):
     x_ticks = list()
@@ -52,6 +55,6 @@ def draw_bezier_curve_with_function(bezier_curve_points, f, start, end, step):
     plt.show()
 
 if __name__ == "__main__":
-    bezier_curve_points = find_bezier_curve(f, START, END, NUMBER_OF_POINTS)
+    bezier_curve_points = find_bezier_curve(f, START, END, NUMBER_OF_POINTS, 100)
 
     draw_bezier_curve_with_function(bezier_curve_points, f, START, END, 0.01)
