@@ -32,7 +32,7 @@ def draw_function(f, a, b, step):
 
     plt.show()
 
-def draw_functions(a, b, step, *functions):
+def draw_functions(a, b, step, *functions, points=None):
     
     x_ticks = list()
     i = a
@@ -43,6 +43,11 @@ def draw_functions(a, b, step, *functions):
 
     plt.grid(True)
     plt.xticks(x_ticks)
+
+    if points != None:
+        points_x, points_y = points
+
+        plt.scatter(points_x, points_y, s=10)
 
     for function, function_name in functions:
         x = list()
