@@ -25,8 +25,10 @@ def interpolate_two_variables_function(g, grid):
 
         for i in range(n):
             for j in range(m):
-                result += g(x_nodes[i], y_nodes[i]) * \
+                tmp = g(x_nodes[i], y_nodes[j]) * \
                     lagrange_basis(i, x_nodes, x) * lagrange_basis(j, y_nodes, y)
+
+                result += tmp
 
         return result
 
@@ -34,10 +36,11 @@ def interpolate_two_variables_function(g, grid):
 
 
 if __name__ == "__main__":
-    grid = generate_grid(18, START, END, SECOND_VARIABLE_START, SECOND_VARIABLE_END)
-            
+    grid = generate_grid(12, START, END, SECOND_VARIABLE_START, SECOND_VARIABLE_END)
+
     interpolation = interpolate_two_variables_function(g, grid)
 
-    draw_two_variables_fuctions(grid, (interpolation, "Interpolation"), \
+    grid_to_draw = generate_grid(20, START, END, SECOND_VARIABLE_START, SECOND_VARIABLE_END)
+    draw_two_variables_fuctions(grid_to_draw, (interpolation, "Interpolation"), \
         (g, "Original function"))
 

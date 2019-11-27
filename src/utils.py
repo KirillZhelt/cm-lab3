@@ -97,13 +97,18 @@ def draw_two_variables_fuctions(grid, *functions):
             counter_x = 0
             for beta in b:
                 nu[counter_x, counter_y] = function(beta, deta)
+
+                if nu[counter_x, counter_y] < -20:
+                    print(1)
+
                 counter_x += 1
             counter_y += 1
 
-        X, Y = np.meshgrid(d, b)
+        X, Y = np.meshgrid(b, d)
 
         fig = plt.figure()
         ax = fig.add_subplot(111, projection = '3d')
+        ax.set_zlim(-6, 6)
         ax.plot_surface(X, Y, nu)
 
     plt.show()
