@@ -98,9 +98,6 @@ def draw_two_variables_fuctions(grid, *functions):
             for beta in b:
                 nu[counter_x, counter_y] = function(beta, deta)
 
-                if nu[counter_x, counter_y] < -20:
-                    print(1)
-
                 counter_x += 1
             counter_y += 1
 
