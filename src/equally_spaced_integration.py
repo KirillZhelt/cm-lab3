@@ -1,6 +1,7 @@
 import numpy as np
 
 from function import *
+from utils import *
 
 A = -4
 B = 4
@@ -18,9 +19,6 @@ THIRTEEN_POINTS = [1364651, 9903168, -7587864, 35725120, -51491295, 87516288, -8
 
 FIFTEEN_POINTS = [90241897, 710986864, -770720657, 3501442784, -6625093363, 12630121616, -16802270373, \
     19534438464, -16802270373, 12630121616, -6625093363, 3501442784, -770720657, 710986864, 90241897]
-
-def count_step(i):
-    return 8 / (4 ** i)
 
 def build_sequence(a, h, n):
     result = a

@@ -109,3 +109,6 @@ def draw_two_variables_fuctions(grid, *functions):
         ax.plot_surface(X, Y, nu)
 
     plt.show()
+
+def count_step(i):
+    return 8 / (4 ** i)
