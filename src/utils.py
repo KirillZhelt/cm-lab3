@@ -107,6 +107,7 @@ def draw_two_variables_fuctions(grid, *functions):
         ax = fig.add_subplot(111, projection = '3d')
         ax.set_zlim(-6, 6)
         ax.plot_surface(X, Y, nu)
+        ax.title.set_text(function_name)
 
     plt.show()
 
