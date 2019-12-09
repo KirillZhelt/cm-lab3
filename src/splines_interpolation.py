@@ -24,7 +24,7 @@ def divided_differences(f, x0, x1, x2):
     return f(x2) / ((x2 - x1) * (x2 - x0)) + f(x1) / ((x1 - x2) * (x1 - x0)) + \
          f(x0) / ((x0 - x2) * (x0 - x1))
 
-def spline_interpolation(f, nodes):
+def spline_intepolation_coefs(f, nodes):
     n = len(nodes) - 1
 
     h = [nodes[i] - nodes[i - 1] for i in range(1, n + 1)]
@@ -53,16 +53,24 @@ def spline_interpolation(f, nodes):
 
     deltas = [(gammas[i] - gammas[i - 1]) / h[i - 1] for i in range(1, n + 1)]
 
-    splines = [spline_builder(alphas[i - 1], betas[i - 1], gammas[i], deltas[i - 1], nodes[i]) \
+    gammas = gammas[1:]
+
+    return (alphas, betas, gammas, deltas, nodes)
+
+def spline_interpolation(f, nodes):
+    
+    alphas, betas, gammas, deltas, nodes = spline_intepolation_coefs(f, nodes)
+
+    n = len(nodes) - 1
+
+    splines = [spline_builder(alphas[i - 1], betas[i - 1], gammas[i - 1], deltas[i - 1], nodes[i]) \
          for i in range(1, n + 1)]
 
     return spline_system_builder(splines, nodes)
 
 if __name__ == "__main__":
-    equally_spaced_nodes = find_equally_spaced(START, END, 6)
+    equally_spaced_nodes = find_equally_spaced(START, END, 12)
 
     splines = spline_interpolation(f, equally_spaced_nodes)
 
-    print(splines(-4))
-
-    # draw_functions(START, END, 0.01, (splines, "Splines"), (f, "Function to interpolate"))
+    draw_functions(START, END, 0.01, (splines, "Splines"), (f, "Function to interpolate"))
