@@ -2,7 +2,7 @@ import math
 
 from function import *
 
-sections = ((-3.5, -1.6), (-1.4, -0.84), (1.5, 2.27))
+SECTIONS = ((-3.5, -1.6), (-1.4, -0.84), (1.5, 2.27))
 
 BISECTION_SECTION_LENGTH = 1e-4
 DISCRETE_NEWTON_H = 1e-5
@@ -93,7 +93,7 @@ def newton(sections, f, derivative_f, eps):
     return (roots, root_counts)
 
 if __name__ == "__main__":
-    result_sections, section_counts = bisection(sections, f, BISECTION_SECTION_LENGTH)
+    result_sections, section_counts = bisection(SECTIONS, f, BISECTION_SECTION_LENGTH)
 
     discrete_newton_roots, discrete_newton_root_counts = discrete_newton(result_sections, f, \
         DISCRETE_NEWTON_H, DISCRETE_NEWTON_EPS)
@@ -150,6 +150,5 @@ if __name__ == "__main__":
         report_file.write("EPS = " + str(NEWTON_EPS))
         report_file.write("\n")
 
-    draw_function(f, -26, 20, 0.01)
 
 
