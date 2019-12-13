@@ -81,6 +81,7 @@ def draw_functions(a, b, step, *functions, points=None):
         plt.plot(x, y, label=function_name)
 
     plt.legend()
+    plt.ylim(-4, 4)
 
     plt.show()
 

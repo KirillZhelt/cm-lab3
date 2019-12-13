@@ -23,238 +23,238 @@ EPS = 1e-15
 
 LAGRANGE INTERPOLATION ON EQUALLY SPACED NODES (TASK 6):
 Number of nodes: 6
-Elapsed time: 0.0
+Elapsed time: 0.0001322999999999741
 Number of nodes: 12
-Elapsed time: 0.0
+Elapsed time: 0.0001820000000001265
 Number of nodes: 18
-Elapsed time: 0.0
+Elapsed time: 0.0003536999999997903
 
 LAGRANGE INTERPOLATION ON CHEBYSHEV NODES (TASK 7):
 Number of nodes: 6
-Elapsed time: 0.0
+Elapsed time: 7.860000000015077e-05
 Number of nodes: 12
-Elapsed time: 0.0
+Elapsed time: 0.00018150000000005662
 Number of nodes: 18
-Elapsed time: 0.0
+Elapsed time: 0.000408000000000186
 
 SPLINES INTERPOLATION (TASK 8):
 Number of nodes: 6
-Elapsed time: 0.03815484046936035
+Elapsed time: 0.0007815999999998269
 Number of nodes: 12
-Elapsed time: 0.0010094642639160156
+Elapsed time: 0.0015916999999987524
 Number of nodes: 18
-Elapsed time: 0.0019965171813964844
+Elapsed time: 0.002815500000000526
 
 BEZIER CURVE (TASK 9):
-Elapsed time: 0.03290820121765137
+Elapsed time: 0.02921550000000117
 
 LEAST SQUARES (TASK 10):
-Elapsed time: 0.0030066967010498047
-Elapsed time: 0.0009975433349609375
-Elapsed time: 0.003994464874267578
-Elapsed time: 0.005987405776977539
-Elapsed time: 0.0069811344146728516
+Elapsed time: 0.0010003999999987911
+Elapsed time: 0.0019010000000001526
+Elapsed time: 0.002205600000001695
+Elapsed time: 0.0034189999999991727
+Elapsed time: 0.00793379999999999
 
 TWO VARIABLES FUNCTION LAGRANGE INTERPOLATION (TASK 11):
-Elapsed time: 0.0
-Elapsed time: 0.0
-Elapsed time: 0.0
+Elapsed time: 0.0001622999999995045
+Elapsed time: 0.0006973999999999592
+Elapsed time: 0.001538100000001208
 
 TWO VARIABLES FUNCTION SPLINES INTERPOLATION (TASK 12):
-Elapsed time: 0.0109710693359375
-Elapsed time: 0.05690121650695801
-Elapsed time: 0.06083869934082031
+Elapsed time: 0.012993700000002661
+Elapsed time: 0.07004349999999704
+Elapsed time: 0.04219900000000365
 
 EQUALLY SPACED INTEGRATION (TASK 13):
-Left rectangles (0); elapsed time=0.0; result difference=4.726815628658991
-Left rectangles (1); elapsed time=0.0; result difference=1.366940313760809
-Left rectangles (2); elapsed time=0.0009970664978027344; result difference=0.014983101303776003
-Left rectangles (3); elapsed time=0.0; result difference=0.0037612528105528398
-Left rectangles (4); elapsed time=0.000997781753540039; result difference=0.0009403119351887312
-Left rectangles (5); elapsed time=0.0049855709075927734; result difference=0.0002350779032083139
-Left rectangles (6); elapsed time=0.015989065170288086; result difference=5.876947077609884e-05
-Left rectangles (7); elapsed time=0.03191518783569336; result difference=1.469236735118784e-05
-Left rectangles (8); elapsed time=0.14857077598571777; result difference=3.673091868883205e-06
-Left rectangles (9); elapsed time=0.5804779529571533; result difference=9.182729705514703e-07
-Left rectangles (10); elapsed time=2.1482229232788086; result difference=2.2956849754507402e-07
+Left rectangles (0); elapsed time=2.360000000578566e-05; result difference=4.726815628658991
+Left rectangles (1); elapsed time=2.2699999995268172e-05; result difference=1.366940313760809
+Left rectangles (2); elapsed time=6.009999999889715e-05; result difference=0.014983101303776003
+Left rectangles (3); elapsed time=0.00026580000000109294; result difference=0.0037612528105528398
+Left rectangles (4); elapsed time=0.0014139999999969177; result difference=0.0009403119351887312
+Left rectangles (5); elapsed time=0.00492900000000418; result difference=0.0002350779032083139
+Left rectangles (6); elapsed time=0.011081300000000738; result difference=5.876947077609884e-05
+Left rectangles (7); elapsed time=0.03336070000000291; result difference=1.469236735118784e-05
+Left rectangles (8); elapsed time=0.1177617999999967; result difference=3.673091868883205e-06
+Left rectangles (9); elapsed time=0.4194014999999993; result difference=9.182729705514703e-07
+Left rectangles (10); elapsed time=2.0107789999999994; result difference=2.2956849754507402e-07
 
-Right rectangles (0); elapsed time=0.0; result difference=5.208255119306994
-Right rectangles (1); elapsed time=0.0; result difference=1.246580441098808
-Right rectangles (2); elapsed time=0.0; result difference=0.015106866861724022
-Right rectangles (3); elapsed time=0.0; result difference=0.0037612392308234988
-Right rectangles (4); elapsed time=0.0009987354278564453; result difference=0.0009403110751549093
-Right rectangles (5); elapsed time=0.001992940902709961; result difference=0.00023507784937759624
-Right rectangles (6); elapsed time=0.006981372833251953; result difference=5.876946737082278e-05
-Right rectangles (7); elapsed time=0.03291201591491699; result difference=1.4692367185098476e-05
-Right rectangles (8); elapsed time=0.11672163009643555; result difference=3.6730917667426866e-06
-Right rectangles (9); elapsed time=0.5544850826263428; result difference=9.182729385770472e-07
-Right rectangles (10); elapsed time=1.966737985610962; result difference=2.2956798062523376e-07
+Right rectangles (0); elapsed time=1.8199999999524152e-05; result difference=5.208255119306994
+Right rectangles (1); elapsed time=9.8999999949001e-06; result difference=1.246580441098808
+Right rectangles (2); elapsed time=2.4899999999661304e-05; result difference=0.015106866861724022
+Right rectangles (3); elapsed time=9.409999999832053e-05; result difference=0.0037612392308234988
+Right rectangles (4); elapsed time=0.0004115999999996234; result difference=0.0009403110751549093
+Right rectangles (5); elapsed time=0.0017228999999971961; result difference=0.00023507784937759624
+Right rectangles (6); elapsed time=0.005860099999999591; result difference=5.876946737082278e-05
+Right rectangles (7); elapsed time=0.024411499999999364; result difference=1.4692367185098476e-05
+Right rectangles (8); elapsed time=0.09361829999999571; result difference=3.6730917667426866e-06
+Right rectangles (9); elapsed time=0.3889744999999962; result difference=9.182729385770472e-07
+Right rectangles (10); elapsed time=2.2244978000000017; result difference=2.2956798062523376e-07
 
-Middle rectangles (0); elapsed time=0.0; result difference=20.16520854963178
-Middle rectangles (1); elapsed time=0.0; result difference=1.4124471875815794
-Middle rectangles (2); elapsed time=0.0; result difference=6.193484064631605e-05
-Middle rectangles (3); elapsed time=0.0; result difference=3.3588634096304304e-09
-Middle rectangles (4); elapsed time=0.0009970664978027344; result difference=2.148698996506937e-10
-Middle rectangles (5); elapsed time=0.0019943714141845703; result difference=1.3455903058456897e-11
-Middle rectangles (6); elapsed time=0.006982088088989258; result difference=8.393286066166183e-13
-Middle rectangles (7); elapsed time=0.047872066497802734; result difference=4.1744385725905886e-14
-Middle rectangles (8); elapsed time=0.15059781074523926; result difference=1.509903313490213e-14
-Middle rectangles (9); elapsed time=0.5585050582885742; result difference=1.7141843500212417e-13
-Middle rectangles (10); elapsed time=2.0714590549468994; result difference=2.8332891588433995e-13
+Middle rectangles (0); elapsed time=1.5699999998730618e-05; result difference=20.16520854963178
+Middle rectangles (1); elapsed time=9.499999997331088e-06; result difference=1.4124471875815794
+Middle rectangles (2); elapsed time=2.6099999999473766e-05; result difference=6.193484064631605e-05
+Middle rectangles (3); elapsed time=9.990000000215105e-05; result difference=3.3588634096304304e-09
+Middle rectangles (4); elapsed time=0.0004935000000045875; result difference=2.148698996506937e-10
+Middle rectangles (5); elapsed time=0.0016504000000026053; result difference=1.3454126701617497e-11
+Middle rectangles (6); elapsed time=0.005768899999999633; result difference=8.393286066166183e-13
+Middle rectangles (7); elapsed time=0.02293470000000042; result difference=4.1744385725905886e-14
+Middle rectangles (8); elapsed time=0.0918868000000046; result difference=1.509903313490213e-14
+Middle rectangles (9); elapsed time=0.3781186000000005; result difference=1.723066134218243e-13
+Middle rectangles (10); elapsed time=1.548206999999998; result difference=2.8332891588433995e-13
 
-Trapezoid (0); elapsed time=0.0; result difference=4.967535373982993
-Trapezoid (1); elapsed time=0.0; result difference=1.306760377429808
-Trapezoid (2); elapsed time=0.0; result difference=6.188277897400951e-05
-Trapezoid (3); elapsed time=0.0; result difference=6.789863782330485e-09
-Trapezoid (4); elapsed time=0.0009987354278564453; result difference=4.3001691096833383e-10
-Trapezoid (5); elapsed time=0.0009968280792236328; result difference=2.6916247009012295e-11
-Trapezoid (6); elapsed time=0.008012056350708008; result difference=1.70263803056514e-12
-Trapezoid (7); elapsed time=0.03287982940673828; result difference=8.348877145181177e-14
-Trapezoid (8); elapsed time=0.1266939640045166; result difference=5.062616992290714e-14
-Trapezoid (9); elapsed time=0.5694477558135986; result difference=1.5987211554602254e-14
-Trapezoid (10); elapsed time=2.0046334266662598; result difference=2.575717417130363e-13
+Trapezoid (0); elapsed time=1.9200000004104822e-05; result difference=4.967535373982993
+Trapezoid (1); elapsed time=1.2599999998030853e-05; result difference=1.306760377429808
+Trapezoid (2); elapsed time=2.5999999998305157e-05; result difference=6.188277897400951e-05
+Trapezoid (3); elapsed time=9.250000000093905e-05; result difference=6.789863782330485e-09
+Trapezoid (4); elapsed time=0.0004044000000007486; result difference=4.3001691096833383e-10
+Trapezoid (5); elapsed time=0.0019138000000040734; result difference=2.6916247009012295e-11
+Trapezoid (6); elapsed time=0.007522600000001489; result difference=1.70263803056514e-12
+Trapezoid (7); elapsed time=0.02955949999999774; result difference=8.348877145181177e-14
+Trapezoid (8); elapsed time=0.09428969999999737; result difference=5.062616992290714e-14
+Trapezoid (9); elapsed time=0.38716790000000145; result difference=1.5987211554602254e-14
+Trapezoid (10); elapsed time=1.5404909999999958; result difference=2.575717417130363e-13
 
-Simpson (0); elapsed time=0.0; result difference=11.787627241760191
-Simpson (1); elapsed time=0.0; result difference=0.5060446659111166
-Simpson (2); elapsed time=0.0; result difference=2.0662300772578135e-05
-Simpson (3); elapsed time=0.0009975433349609375; result difference=2.404743071338089e-11
-Simpson (4); elapsed time=0.000997304916381836; result difference=9.325873406851315e-14
-Simpson (5); elapsed time=0.0069811344146728516; result difference=2.6645352591003757e-15
-Simpson (6); elapsed time=0.03391265869140625; result difference=1.3322676295501878e-14
-Simpson (7); elapsed time=0.11269760131835938; result difference=7.993605777301127e-15
-Simpson (8); elapsed time=0.4358327388763428; result difference=3.019806626980426e-14
-Simpson (9); elapsed time=1.6266775131225586; result difference=6.483702463810914e-14
-Simpson (10); elapsed time=6.535493612289429; result difference=4.263256414560601e-14
+Simpson (0); elapsed time=1.4600000000086766e-05; result difference=11.787627241760191
+Simpson (1); elapsed time=1.9899999998074236e-05; result difference=0.5060446659111166
+Simpson (2); elapsed time=7.140000000305236e-05; result difference=2.0662300772578135e-05
+Simpson (3); elapsed time=0.000278600000001461; result difference=2.404743071338089e-11
+Simpson (4); elapsed time=0.0014656000000030645; result difference=9.325873406851315e-14
+Simpson (5); elapsed time=0.005867899999998372; result difference=2.6645352591003757e-15
+Simpson (6); elapsed time=0.023281900000000633; result difference=1.3322676295501878e-14
+Simpson (7); elapsed time=0.08715330000000421; result difference=7.993605777301127e-15
+Simpson (8); elapsed time=0.2890979000000016; result difference=3.019806626980426e-14
+Simpson (9); elapsed time=1.6630190000000056; result difference=6.483702463810914e-14
+Simpson (10); elapsed time=5.1554405000000045; result difference=4.263256414560601e-14
 
-Newton-Cotes5 (0); elapsed time=0.0; result difference=1.6291467327769587
-Newton-Cotes5 (1); elapsed time=0.0; result difference=0.05243706624651434
-Newton-Cotes5 (2); elapsed time=0.000997304916381836; result difference=1.3770854261352383e-06
-Newton-Cotes5 (3); elapsed time=0.0009984970092773438; result difference=2.6645352591003757e-14
-Newton-Cotes5 (4); elapsed time=0.0069806575775146484; result difference=3.552713678800501e-15
-Newton-Cotes5 (5); elapsed time=0.016952991485595703; result difference=4.440892098500626e-15
-Newton-Cotes5 (6); elapsed time=0.05784797668457031; result difference=1.7763568394002505e-15
-Newton-Cotes5 (7); elapsed time=0.2383589744567871; result difference=7.105427357601002e-15
-Newton-Cotes5 (8); elapsed time=0.7500278949737549; result difference=3.108624468950438e-14
-Newton-Cotes5 (9); elapsed time=4.050634145736694; result difference=6.483702463810914e-14
-Newton-Cotes5 (10); elapsed time=15.072552919387817; result difference=4.263256414560601e-14
+Newton-Cotes5 (0); elapsed time=2.1600000003729747e-05; result difference=1.6291467327769587
+Newton-Cotes5 (1); elapsed time=3.8199999998767e-05; result difference=0.05243706624651434
+Newton-Cotes5 (2); elapsed time=0.00014130000000278642; result difference=1.3770854261352383e-06
+Newton-Cotes5 (3); elapsed time=0.0007500999999976443; result difference=2.6645352591003757e-14
+Newton-Cotes5 (4); elapsed time=0.0030135999999956198; result difference=3.552713678800501e-15
+Newton-Cotes5 (5); elapsed time=0.012053699999995615; result difference=5.329070518200751e-15
+Newton-Cotes5 (6); elapsed time=0.04705630000000127; result difference=1.7763568394002505e-15
+Newton-Cotes5 (7); elapsed time=0.19099519999999615; result difference=7.105427357601002e-15
+Newton-Cotes5 (8); elapsed time=0.6224296999999979; result difference=3.108624468950438e-14
+Newton-Cotes5 (9); elapsed time=2.2912190999999993; result difference=6.483702463810914e-14
+Newton-Cotes5 (10); elapsed time=10.506880699999996; result difference=4.263256414560601e-14
 
-Newton-Cotes7 (0); elapsed time=0.0; result difference=3.3079566794564466
-Newton-Cotes7 (1); elapsed time=0.0; result difference=0.007176703549659713
-Newton-Cotes7 (2); elapsed time=0.000997781753540039; result difference=7.377288024912332e-08
-Newton-Cotes7 (3); elapsed time=0.000997304916381836; result difference=0.0
-Newton-Cotes7 (4); elapsed time=0.00498652458190918; result difference=8.881784197001252e-16
-Newton-Cotes7 (5); elapsed time=0.019947528839111328; result difference=2.6645352591003757e-15
-Newton-Cotes7 (6); elapsed time=0.07679367065429688; result difference=1.7763568394002505e-15
-Newton-Cotes7 (7); elapsed time=0.3031883239746094; result difference=7.105427357601002e-15
-Newton-Cotes7 (8); elapsed time=1.1080355644226074; result difference=3.2862601528904634e-14
-Newton-Cotes7 (9); elapsed time=4.505949258804321; result difference=6.483702463810914e-14
-Newton-Cotes7 (10); elapsed time=19.199646949768066; result difference=4.1744385725905886e-14
+Newton-Cotes7 (0); elapsed time=1.760000000672335e-05; result difference=3.3079566794564466
+Newton-Cotes7 (1); elapsed time=4.870000000778418e-05; result difference=0.007176703549659713
+Newton-Cotes7 (2); elapsed time=0.0001834999999914544; result difference=7.377288024912332e-08
+Newton-Cotes7 (3); elapsed time=0.0007308000000136872; result difference=0.0
+Newton-Cotes7 (4); elapsed time=0.0029456000000038784; result difference=8.881784197001252e-16
+Newton-Cotes7 (5); elapsed time=0.012010400000008303; result difference=2.6645352591003757e-15
+Newton-Cotes7 (6); elapsed time=0.04704329999999857; result difference=1.7763568394002505e-15
+Newton-Cotes7 (7); elapsed time=0.18810550000000603; result difference=7.105427357601002e-15
+Newton-Cotes7 (8); elapsed time=0.811918100000014; result difference=3.2862601528904634e-14
+Newton-Cotes7 (9); elapsed time=3.655417799999995; result difference=6.483702463810914e-14
+Newton-Cotes7 (10); elapsed time=14.08884660000001; result difference=4.1744385725905886e-14
 
-Newton-Cotes9 (0); elapsed time=0.0; result difference=3.725692659079521
-Newton-Cotes9 (1); elapsed time=0.0; result difference=0.0004869890856449288
-Newton-Cotes9 (2); elapsed time=0.0; result difference=2.8492648240785456e-09
-Newton-Cotes9 (3); elapsed time=0.0009980201721191406; result difference=8.881784197001252e-16
-Newton-Cotes9 (4); elapsed time=0.0049860477447509766; result difference=0.0
-Newton-Cotes9 (5); elapsed time=0.018949508666992188; result difference=2.6645352591003757e-15
-Newton-Cotes9 (6); elapsed time=0.07479977607727051; result difference=1.7763568394002505e-15
-Newton-Cotes9 (7); elapsed time=0.33610105514526367; result difference=5.329070518200751e-15
-Newton-Cotes9 (8); elapsed time=1.4142186641693115; result difference=3.108624468950438e-14
-Newton-Cotes9 (9); elapsed time=5.5461649894714355; result difference=6.572520305780927e-14
-Newton-Cotes9 (10); elapsed time=22.008136749267578; result difference=4.3520742565306136e-14
+Newton-Cotes9 (0); elapsed time=2.8800000009709947e-05; result difference=3.725692659079521
+Newton-Cotes9 (1); elapsed time=6.059999999763477e-05; result difference=0.0004869890856449288
+Newton-Cotes9 (2); elapsed time=0.0002293999999949392; result difference=2.8492648240785456e-09
+Newton-Cotes9 (3); elapsed time=0.0009145000000074788; result difference=8.881784197001252e-16
+Newton-Cotes9 (4); elapsed time=0.003648699999999394; result difference=0.0
+Newton-Cotes9 (5); elapsed time=0.014703600000004258; result difference=2.6645352591003757e-15
+Newton-Cotes9 (6); elapsed time=0.05886689999999817; result difference=1.7763568394002505e-15
+Newton-Cotes9 (7); elapsed time=0.23775189999999213; result difference=5.329070518200751e-15
+Newton-Cotes9 (8); elapsed time=1.3812446000000023; result difference=3.108624468950438e-14
+Newton-Cotes9 (9); elapsed time=4.169940600000004; result difference=6.572520305780927e-14
+Newton-Cotes9 (10); elapsed time=17.205603800000006; result difference=4.3520742565306136e-14
 
-Newton-Cotes11 (0); elapsed time=0.0; result difference=3.3486616396682374
-Newton-Cotes11 (1); elapsed time=0.0; result difference=0.00010739875727150405
-Newton-Cotes11 (2); elapsed time=0.000997304916381836; result difference=8.15312262147927e-11
-Newton-Cotes11 (3); elapsed time=0.002991914749145508; result difference=8.881784197001252e-16
-Newton-Cotes11 (4); elapsed time=0.007980108261108398; result difference=8.881784197001252e-16
-Newton-Cotes11 (5); elapsed time=0.028922319412231445; result difference=1.7763568394002505e-15
-Newton-Cotes11 (6); elapsed time=0.09477734565734863; result difference=2.6645352591003757e-15
-Newton-Cotes11 (7); elapsed time=0.39690661430358887; result difference=8.881784197001252e-15
-Newton-Cotes11 (8); elapsed time=1.6844944953918457; result difference=2.842170943040401e-14
-Newton-Cotes11 (9); elapsed time=7.898874998092651; result difference=6.394884621840902e-14
-Newton-Cotes11 (10); elapsed time=27.068599462509155; result difference=4.3520742565306136e-14
+Newton-Cotes11 (0); elapsed time=2.320000000111122e-05; result difference=3.3486616396682374
+Newton-Cotes11 (1); elapsed time=7.440000000258351e-05; result difference=0.00010739875727150405
+Newton-Cotes11 (2); elapsed time=0.00027529999999842403; result difference=8.15312262147927e-11
+Newton-Cotes11 (3); elapsed time=0.0010924999999986085; result difference=8.881784197001252e-16
+Newton-Cotes11 (4); elapsed time=0.004382200000009107; result difference=8.881784197001252e-16
+Newton-Cotes11 (5); elapsed time=0.018296399999996993; result difference=2.6645352591003757e-15
+Newton-Cotes11 (6); elapsed time=0.07355839999999603; result difference=2.6645352591003757e-15
+Newton-Cotes11 (7); elapsed time=0.5494369000000034; result difference=8.881784197001252e-15
+Newton-Cotes11 (8); elapsed time=1.3423355000000043; result difference=2.842170943040401e-14
+Newton-Cotes11 (9); elapsed time=5.2659366999999975; result difference=6.394884621840902e-14
+Newton-Cotes11 (10); elapsed time=20.422059399999995; result difference=4.440892098500626e-14
 
-Newton-Cotes13 (0); elapsed time=0.0; result difference=1.8597119878255102
-Newton-Cotes13 (1); elapsed time=0.000997781753540039; result difference=3.0954232966173834e-05
-Newton-Cotes13 (2); elapsed time=0.0; result difference=1.7816859099184512e-12
-Newton-Cotes13 (3); elapsed time=0.0019948482513427734; result difference=4.440892098500626e-15
-Newton-Cotes13 (4); elapsed time=0.006981372833251953; result difference=0.0
-Newton-Cotes13 (5); elapsed time=0.026927947998046875; result difference=0.0
-Newton-Cotes13 (6); elapsed time=0.12466788291931152; result difference=8.881784197001252e-16
-Newton-Cotes13 (7); elapsed time=0.5924162864685059; result difference=8.881784197001252e-15
-Newton-Cotes13 (8); elapsed time=2.0465266704559326; result difference=3.197442310920451e-14
-Newton-Cotes13 (9); elapsed time=7.97466778755188; result difference=6.572520305780927e-14
-Newton-Cotes13 (10); elapsed time=34.334168672561646; result difference=4.796163466380676e-14
+Newton-Cotes13 (0); elapsed time=3.529999997908817e-05; result difference=1.8597119878255102
+Newton-Cotes13 (1); elapsed time=0.00011209999999550746; result difference=3.095423296706201e-05
+Newton-Cotes13 (2); elapsed time=0.0004672000000027765; result difference=1.7816859099184512e-12
+Newton-Cotes13 (3); elapsed time=0.0022446000000115873; result difference=2.6645352591003757e-15
+Newton-Cotes13 (4); elapsed time=0.0054691999999931795; result difference=0.0
+Newton-Cotes13 (5); elapsed time=0.02374829999999406; result difference=0.0
+Newton-Cotes13 (6); elapsed time=0.08431060000000912; result difference=8.881784197001252e-16
+Newton-Cotes13 (7); elapsed time=0.3365455999999938; result difference=9.769962616701378e-15
+Newton-Cotes13 (8); elapsed time=1.8031103000000144; result difference=3.2862601528904634e-14
+Newton-Cotes13 (9); elapsed time=5.860013500000008; result difference=6.661338147750939e-14
+Newton-Cotes13 (10); elapsed time=24.94563629999999; result difference=4.707345624410664e-14
 
-Newton-Cotes15 (0); elapsed time=0.0; result difference=1.4838060623569427
-Newton-Cotes15 (1); elapsed time=0.0; result difference=1.1581065537669133e-06
-Newton-Cotes15 (2); elapsed time=0.0; result difference=2.6645352591003757e-14
-Newton-Cotes15 (3); elapsed time=0.001994609832763672; result difference=3.552713678800501e-15
-Newton-Cotes15 (4); elapsed time=0.00797891616821289; result difference=1.7763568394002505e-15
-Newton-Cotes15 (5); elapsed time=0.03194928169250488; result difference=7.105427357601002e-15
-Newton-Cotes15 (6); elapsed time=0.13164520263671875; result difference=3.552713678800501e-15
-Newton-Cotes15 (7); elapsed time=0.5185811519622803; result difference=1.2434497875801753e-14
-Newton-Cotes15 (8); elapsed time=2.3646764755249023; result difference=2.5757174171303632e-14
-Newton-Cotes15 (9); elapsed time=9.41242241859436; result difference=6.394884621840902e-14
-Newton-Cotes15 (10); elapsed time=38.02487659454346; result difference=4.263256414560601e-14
+Newton-Cotes15 (0); elapsed time=3.1599999999798456e-05; result difference=1.4838060623569427
+Newton-Cotes15 (1); elapsed time=9.639999998967141e-05; result difference=1.1581065537669133e-06
+Newton-Cotes15 (2); elapsed time=0.0003738000000055308; result difference=2.6645352591003757e-14
+Newton-Cotes15 (3); elapsed time=0.0014964000000077249; result difference=4.440892098500626e-15
+Newton-Cotes15 (4); elapsed time=0.005964900000009266; result difference=1.7763568394002505e-15
+Newton-Cotes15 (5); elapsed time=0.024210299999992912; result difference=6.217248937900877e-15
+Newton-Cotes15 (6); elapsed time=0.09719140000001403; result difference=8.881784197001252e-16
+Newton-Cotes15 (7); elapsed time=0.3963510000000099; result difference=1.2434497875801753e-14
+Newton-Cotes15 (8); elapsed time=1.9254782999999804; result difference=2.5757174171303632e-14
+Newton-Cotes15 (9); elapsed time=7.389037999999999; result difference=6.394884621840902e-14
+Newton-Cotes15 (10); elapsed time=29.653474799999998; result difference=4.3520742565306136e-14
 
 GAUSS INTEGRATION (TASK 15):
-Gauss2 (0); elapsed time=0.0; result difference=5.000485626515295
-Gauss2 (1); elapsed time=0.0; result difference=0.3756933391516819
-Gauss2 (2); elapsed time=0.0; result difference=1.4914863966986047e-05
-Gauss2 (3); elapsed time=0.0009970664978027344; result difference=1.6008527836675057e-11
-Gauss2 (4); elapsed time=0.0019958019256591797; result difference=6.306066779870889e-14
-Gauss2 (5); elapsed time=0.005983114242553711; result difference=2.6645352591003757e-15
-Gauss2 (6); elapsed time=0.025930404663085938; result difference=7.105427357601002e-15
-Gauss2 (7); elapsed time=0.11971473693847656; result difference=7.105427357601002e-15
-Gauss2 (8); elapsed time=0.49863338470458984; result difference=3.197442310920451e-14
-Gauss2 (9); elapsed time=2.0963926315307617; result difference=6.572520305780927e-14
-Gauss2 (10); elapsed time=8.788536548614502; result difference=4.3520742565306136e-14
+Gauss2 (0); elapsed time=2.0400000011022712e-05; result difference=5.000485626515295
+Gauss2 (1); elapsed time=2.5000000022146196e-05; result difference=0.3756933391516819
+Gauss2 (2); elapsed time=8.299999998939711e-05; result difference=1.4914863966986047e-05
+Gauss2 (3); elapsed time=0.0003317999999978838; result difference=1.6008527836675057e-11
+Gauss2 (4); elapsed time=0.001265399999994088; result difference=6.306066779870889e-14
+Gauss2 (5); elapsed time=0.005098699999990686; result difference=2.6645352591003757e-15
+Gauss2 (6); elapsed time=0.020211200000005647; result difference=7.105427357601002e-15
+Gauss2 (7); elapsed time=0.08152139999998553; result difference=7.105427357601002e-15
+Gauss2 (8); elapsed time=0.3295700000000181; result difference=3.197442310920451e-14
+Gauss2 (9); elapsed time=1.424999100000008; result difference=6.572520305780927e-14
+Gauss2 (10); elapsed time=6.081611000000009; result difference=4.3520742565306136e-14
 
-Gauss3 (0); elapsed time=0.0; result difference=6.20190273440259
-Gauss3 (1); elapsed time=0.0; result difference=0.056986855298304384
-Gauss3 (2); elapsed time=0.0; result difference=1.3914612653209701e-06
-Gauss3 (3); elapsed time=0.0; result difference=2.398081733190338e-14
-Gauss3 (4); elapsed time=0.0019948482513427734; result difference=0.0
-Gauss3 (5); elapsed time=0.008976459503173828; result difference=3.552713678800501e-15
-Gauss3 (6); elapsed time=0.03390765190124512; result difference=1.7763568394002505e-15
-Gauss3 (7); elapsed time=0.16356348991394043; result difference=7.993605777301127e-15
-Gauss3 (8); elapsed time=0.7091023921966553; result difference=2.930988785010413e-14
-Gauss3 (9); elapsed time=2.532228946685791; result difference=6.483702463810914e-14
-Gauss3 (10); elapsed time=10.811083555221558; result difference=4.263256414560601e-14
+Gauss3 (0); elapsed time=3.099999997857594e-05; result difference=6.20190273440259
+Gauss3 (1); elapsed time=8.280000000127075e-05; result difference=0.056986855298304384
+Gauss3 (2); elapsed time=0.00025159999998436433; result difference=1.3914612653209701e-06
+Gauss3 (3); elapsed time=0.0010358000000110223; result difference=2.3092638912203256e-14
+Gauss3 (4); elapsed time=0.0029442000000017288; result difference=8.881784197001252e-16
+Gauss3 (5); elapsed time=0.010661299999981111; result difference=3.552713678800501e-15
+Gauss3 (6); elapsed time=0.058797900000001846; result difference=1.7763568394002505e-15
+Gauss3 (7); elapsed time=0.2113602999999955; result difference=7.993605777301127e-15
+Gauss3 (8); elapsed time=0.47764499999999543; result difference=2.930988785010413e-14
+Gauss3 (9); elapsed time=1.8711318000000006; result difference=6.483702463810914e-14
+Gauss3 (10); elapsed time=8.517227900000023; result difference=4.263256414560601e-14
 
-Gauss4 (0); elapsed time=0.0; result difference=3.678024628496972
-Gauss4 (1); elapsed time=0.0; result difference=0.006548335717537768
-Gauss4 (2); elapsed time=0.0; result difference=6.617259451502377e-08
-Gauss4 (3); elapsed time=0.0009984970092773438; result difference=8.881784197001252e-16
-Gauss4 (4); elapsed time=0.00299072265625; result difference=0.0
-Gauss4 (5); elapsed time=0.009974241256713867; result difference=3.552713678800501e-15
-Gauss4 (6); elapsed time=0.04291033744812012; result difference=0.0
-Gauss4 (7); elapsed time=0.2144005298614502; result difference=8.881784197001252e-15
-Gauss4 (8); elapsed time=1.1569056510925293; result difference=3.2862601528904634e-14
-Gauss4 (9); elapsed time=3.860673189163208; result difference=6.572520305780927e-14
-Gauss4 (10); elapsed time=16.317358255386353; result difference=4.1744385725905886e-14
+Gauss4 (0); elapsed time=1.770000000078653e-05; result difference=3.678024628496972
+Gauss4 (1); elapsed time=3.849999998806197e-05; result difference=0.006548335717538656
+Gauss4 (2); elapsed time=0.0003944999999987431; result difference=6.617259451502377e-08
+Gauss4 (3); elapsed time=0.000986799999992627; result difference=8.881784197001252e-16
+Gauss4 (4); elapsed time=0.0029487999999844305; result difference=0.0
+Gauss4 (5); elapsed time=0.015591800000009925; result difference=3.552713678800501e-15
+Gauss4 (6); elapsed time=0.06676699999999869; result difference=0.0
+Gauss4 (7); elapsed time=0.27450139999999124; result difference=8.881784197001252e-15
+Gauss4 (8); elapsed time=0.573935199999994; result difference=3.197442310920451e-14
+Gauss4 (9); elapsed time=2.5733108999999956; result difference=6.572520305780927e-14
+Gauss4 (10); elapsed time=10.959840600000007; result difference=4.1744385725905886e-14
 
-Gauss5 (0); elapsed time=0.0; result difference=2.162923058840259
-Gauss5 (1); elapsed time=0.0; result difference=0.0003295319584450951
-Gauss5 (2); elapsed time=0.0; result difference=1.9082593283314964e-09
-Gauss5 (3); elapsed time=0.0009970664978027344; result difference=3.552713678800501e-15
-Gauss5 (4); elapsed time=0.003989219665527344; result difference=1.7763568394002505e-15
-Gauss5 (5); elapsed time=0.01795196533203125; result difference=3.552713678800501e-15
-Gauss5 (6); elapsed time=0.05983924865722656; result difference=1.7763568394002505e-15
-Gauss5 (7); elapsed time=0.45079660415649414; result difference=6.217248937900877e-15
-Gauss5 (8); elapsed time=1.2586348056793213; result difference=3.108624468950438e-14
-Gauss5 (9); elapsed time=4.103022813796997; result difference=6.217248937900877e-14
-Gauss5 (10); elapsed time=17.580978631973267; result difference=4.3520742565306136e-14
+Gauss5 (0); elapsed time=1.5799999999899228e-05; result difference=2.162923058840259
+Gauss5 (1); elapsed time=4.630000000815926e-05; result difference=0.0003295319584450951
+Gauss5 (2); elapsed time=0.0001591999999845939; result difference=1.9082593283314964e-09
+Gauss5 (3); elapsed time=0.0006281999999941945; result difference=3.552713678800501e-15
+Gauss5 (4); elapsed time=0.0024800000000197997; result difference=1.7763568394002505e-15
+Gauss5 (5); elapsed time=0.01007750000002261; result difference=3.552713678800501e-15
+Gauss5 (6); elapsed time=0.0400750999999957; result difference=1.7763568394002505e-15
+Gauss5 (7); elapsed time=0.18363840000000664; result difference=6.217248937900877e-15
+Gauss5 (8); elapsed time=0.6448593000000074; result difference=3.108624468950438e-14
+Gauss5 (9); elapsed time=3.0548048999999935; result difference=6.217248937900877e-14
+Gauss5 (10); elapsed time=12.102962200000036; result difference=4.3520742565306136e-14
 
-Gauss6 (0); elapsed time=0.0; result difference=1.2003018432868173
-Gauss6 (1); elapsed time=0.0; result difference=4.3786202788886897e-05
-Gauss6 (2); elapsed time=0.0; result difference=3.693934047532821e-11
-Gauss6 (3); elapsed time=0.0009894371032714844; result difference=8.881784197001252e-16
-Gauss6 (4); elapsed time=0.005983591079711914; result difference=8.881784197001252e-16
-Gauss6 (5); elapsed time=0.0219423770904541; result difference=4.440892098500626e-15
-Gauss6 (6); elapsed time=0.08377408981323242; result difference=2.6645352591003757e-15
-Gauss6 (7); elapsed time=0.3171515464782715; result difference=6.217248937900877e-15
-Gauss6 (8); elapsed time=1.0312416553497314; result difference=3.108624468950438e-14
-Gauss6 (9); elapsed time=4.632641077041626; result difference=6.483702463810914e-14
-Gauss6 (10); elapsed time=17.756476640701294; result difference=4.3520742565306136e-14
+Gauss6 (0); elapsed time=2.1900000035657285e-05; result difference=1.2003018432868173
+Gauss6 (1); elapsed time=6.680000001324515e-05; result difference=4.3786202788886897e-05
+Gauss6 (2); elapsed time=0.0002525000000446198; result difference=3.693934047532821e-11
+Gauss6 (3); elapsed time=0.000996200000031422; result difference=1.7763568394002505e-15
+Gauss6 (4); elapsed time=0.003967499999987467; result difference=8.881784197001252e-16
+Gauss6 (5); elapsed time=0.015644800000018222; result difference=4.440892098500626e-15
+Gauss6 (6); elapsed time=0.06302370000003066; result difference=2.6645352591003757e-15
+Gauss6 (7); elapsed time=0.2517378000000008; result difference=6.217248937900877e-15
+Gauss6 (8); elapsed time=0.8552776999999878; result difference=3.108624468950438e-14
+Gauss6 (9); elapsed time=3.617194799999993; result difference=6.483702463810914e-14
+Gauss6 (10); elapsed time=13.707167400000003; result difference=4.3520742565306136e-14

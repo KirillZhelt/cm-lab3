@@ -21,12 +21,14 @@ def interpolate_two_variables_function(g, grid):
     n = len(x_nodes)
     m = len(y_nodes)
 
+    z = [[g(x_nodes[i], y_nodes[j]) for j in range(m)] for i in range(n)]
+
     def lagrange_polynom_function(x, y):
         result = 0
 
         for i in range(n):
             for j in range(m):
-                tmp = g(x_nodes[i], y_nodes[j]) * \
+                tmp = z[i][j] * \
                     lagrange_basis(i, x_nodes, x) * lagrange_basis(j, y_nodes, y)
 
                 result += tmp

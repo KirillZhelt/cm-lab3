@@ -1,6 +1,8 @@
 import datetime
 import time
 
+from scipy import linalg
+
 from function import *
 from utils import *
 
@@ -14,6 +16,12 @@ from equally_spaced_integration import *
 from gauss_integration import *
 
 if __name__ == "__main__":
+    b = [1, 1]
+
+    a = [[1, 2], [3, 4]]
+
+    linalg.solve(a, b)
+
     draw_function(f, -26, 20, 0.01)
 
     result_sections, section_counts = bisection(SECTIONS, f, BISECTION_SECTION_LENGTH)
@@ -80,10 +88,10 @@ if __name__ == "__main__":
 
             equally_spaced_nodes = find_equally_spaced(START, END, i)
 
-            start_time = time.time()
+            start_time = time.perf_counter()
             lagrange_polynom_from_equally_spaced_nodes = lagrange_interpolation(f, \
                 equally_spaced_nodes)
-            end_time = time.time()
+            end_time = time.perf_counter()
 
             delta = end_time - start_time
 
@@ -101,30 +109,32 @@ if __name__ == "__main__":
 
             chebyshev_nodes = find_chebyshev_nodes(START, END, i)
 
-            start_time = time.time()
+            start_time = time.perf_counter()
             lagrange_polynom_from_chebyshev_nodes = lagrange_interpolation(f, \
                 chebyshev_nodes)
-            end_time = time.time()
+            end_time = time.perf_counter()
 
             delta = end_time - start_time
 
             report_file.write("Elapsed time: " + str(delta) + "\n")
 
-            draw_functions(START, END, 0.01, (lagrange_polynom_from_equally_spaced_nodes, \
+            draw_functions(START, END, 0.01, (lagrange_polynom_from_chebyshev_nodes, \
                 "Lagrange polynom (chebyshev nodes) " + str(i)), \
                 (f, "Function to interpolate"))
 
         report_file.write("\n")
         report_file.write("SPLINES INTERPOLATION (TASK 8):\n")
 
+        spline_interpolation(f, find_equally_spaced(START, END, 8))
+
         for i in 6, 12, 18:
             report_file.write("Number of nodes: " + str(i) + "\n")
 
             equally_spaced_nodes = find_equally_spaced(START, END, i)
 
-            start_time = time.time()
+            start_time = time.perf_counter()
             splines = spline_interpolation(f, equally_spaced_nodes)
-            end_time = time.time()
+            end_time = time.perf_counter()
 
             delta = end_time - start_time
             report_file.write("Elapsed time: " + str(delta) + "\n")
@@ -136,9 +146,9 @@ if __name__ == "__main__":
 
         random_points = generate_random_points(f, START, END, NUMBER_OF_POINTS)
 
-        start_time = time.time()
+        start_time = time.perf_counter()
         bezier_curve_points = find_bezier_curve(random_points, NUMBER_OF_T)
-        end_time = time.time()
+        end_time = time.perf_counter()
 
         delta = end_time - start_time
         report_file.write("Elapsed time: " + str(delta) + "\n")
@@ -150,9 +160,9 @@ if __name__ == "__main__":
 
         random_points = generate_random_points(f, START, END, 100)
         for i in 1, 2, 3, 4, 6:
-            start_time = time.time()
+            start_time = time.perf_counter()
             least_squares_approximation = least_squares(random_points, i)
-            end_time = time.time()
+            end_time = time.perf_counter()
 
             delta = end_time - start_time
             report_file.write("Elapsed time: " + str(delta) + "\n")
@@ -167,9 +177,9 @@ if __name__ == "__main__":
         for i in 6, 12, 18:
             grid = generate_grid(i, START, END, SECOND_VARIABLE_START, SECOND_VARIABLE_END)
 
-            start_time = time.time() 
+            start_time = time.perf_counter() 
             interpolation = interpolate_two_variables_function(g, grid)
-            end_time = time.time()
+            end_time = time.perf_counter()
 
             delta = end_time - start_time
             report_file.write("Elapsed time: " + str(delta) + "\n")
@@ -184,9 +194,9 @@ if __name__ == "__main__":
         for i in 6, 12, 18:
             grid = generate_grid(i, START, END, SECOND_VARIABLE_START, SECOND_VARIABLE_END)
 
-            start_time = time.time() 
+            start_time = time.perf_counter() 
             interpolation = splines_two_variables_function_interpolation(g, grid)
-            end_time = time.time()
+            end_time = time.perf_counter()
 
             delta = end_time - start_time
             report_file.write("Elapsed time: " + str(delta) + "\n")
@@ -198,9 +208,9 @@ if __name__ == "__main__":
         report_file.write("EQUALLY SPACED INTEGRATION (TASK 13):\n")
 
         def profile_integration(name, integration_function, report_file, *args):
-            start_time = time.time()
+            start_time = time.perf_counter()
             result = abs(integration_function(*args) - EXACT_VALUE)
-            end_time = time.time()
+            end_time = time.perf_counter()
 
             delta = end_time - start_time
             report_file.write("{0} ({1}); elapsed time={2}; result difference={3}\n"\
