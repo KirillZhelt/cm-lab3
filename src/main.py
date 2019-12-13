@@ -86,11 +86,12 @@ if __name__ == "__main__":
         for i in 6, 12, 18:
             report_file.write("Number of nodes: " + str(i) + "\n")
 
-            equally_spaced_nodes = find_equally_spaced(START, END, i)
-
             start_time = time.perf_counter()
+
+            equally_spaced_nodes = find_equally_spaced(START, END, i)
             lagrange_polynom_from_equally_spaced_nodes = lagrange_interpolation(f, \
                 equally_spaced_nodes)
+                
             end_time = time.perf_counter()
 
             delta = end_time - start_time
@@ -107,11 +108,12 @@ if __name__ == "__main__":
         for i in 6, 12, 18:
             report_file.write("Number of nodes: " + str(i) + "\n")
 
-            chebyshev_nodes = find_chebyshev_nodes(START, END, i)
-
             start_time = time.perf_counter()
+
+            chebyshev_nodes = find_chebyshev_nodes(START, END, i)
             lagrange_polynom_from_chebyshev_nodes = lagrange_interpolation(f, \
                 chebyshev_nodes)
+
             end_time = time.perf_counter()
 
             delta = end_time - start_time
@@ -130,10 +132,11 @@ if __name__ == "__main__":
         for i in 6, 12, 18:
             report_file.write("Number of nodes: " + str(i) + "\n")
 
-            equally_spaced_nodes = find_equally_spaced(START, END, i)
-
             start_time = time.perf_counter()
+
+            equally_spaced_nodes = find_equally_spaced(START, END, i)
             splines = spline_interpolation(f, equally_spaced_nodes)
+
             end_time = time.perf_counter()
 
             delta = end_time - start_time
