@@ -14,6 +14,7 @@ from least_squares import *
 from two_variables_interpolation import *
 from equally_spaced_integration import *
 from gauss_integration import *
+from runge_rule import *
 
 if __name__ == "__main__":
     b = [1, 1]
@@ -263,7 +264,7 @@ if __name__ == "__main__":
             profile_integration("Newton-Cotes15", newton_cotes, report_file, f, A, B, count_step(i), FIFTEEN_POINTS, FIFTEEN_POINTS_COEF)
            
         report_file.write("\n")
-        report_file.write("GAUSS INTEGRATION (TASK 15):\n")
+        report_file.write("GAUSS INTEGRATION (TASK 14):\n")
 
         for i in range(0, 11):
             profile_integration("Gauss2", composite_gauss, report_file, f, A, B, TWO_NODES, TWO_WEIGHTS, count_step(i))
@@ -283,3 +284,12 @@ if __name__ == "__main__":
         report_file.write("\n")
         for i in range(0, 11):
             profile_integration("Gauss6", composite_gauss, report_file, f, A, B, SIX_NODES, SIX_WEIGHTS, count_step(i))
+
+        report_file.write("\n")
+        report_file.write("Runge rule (TASK 15):\n")
+
+        _, count = runge_rule_newton_cotes(COTES_15_P, 10e-15)
+        report_file.write("Newton-Cotes15: {0} steps\n".format(count))
+
+        _, count = runge_rule_gauss(GAUSS_7_P, 10e-15)
+        report_file.write("Gauss7: {0} steps\n".format(count))

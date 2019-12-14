@@ -2,29 +2,32 @@ from math import ceil
 
 from function import *
 
-from equally_spaced_integration import simpson, A, B, EXACT_VALUE
-from gauss_integration import gauss, SEVEN_NODES, SEVEN_WEIGHTS
+from equally_spaced_integration import newton_cotes, A, B, EXACT_VALUE, FIFTEEN_POINTS, FIFTEEN_POINTS_COEF
+from gauss_integration import composite_gauss, SEVEN_NODES, SEVEN_WEIGHTS
 
-SIMPSON_P = 4
+COTES_15_P = 16
+GAUSS_7_P = 14
 
-# TODO: какой показатель точности у гаусса на 7 узлах
+def runge_rule_newton_cotes(p, accuracy):
+    N1 = 1
+    N2 = 2
 
-def runge_rule(integrate, p, f, a, b, accuracy):
-    N1 = 5
-    N2 = 10
+    h1 = (B - A) / N1
 
-    h1 = (b - a) / N1
+    q1 = newton_cotes(f, A, B, h1, FIFTEEN_POINTS, FIFTEEN_POINTS_COEF)
 
-    q1 = integrate(f, a, b, h1)
+    count = 0
 
     while True:
-        h2 = (b - a) / N2
-        q2 = integrate(f, a, b, h2)
+        count += 1
+
+        h2 = (B - A) / N2
+        q2 = newton_cotes(f, A, B, h2, FIFTEEN_POINTS, FIFTEEN_POINTS_COEF)
 
         R = ((q2 - q1) * h2 ** p) / (h1 ** p - h2 ** p) 
 
         if abs(R) <= accuracy:
-            return q2
+            return q2, count
 
         N = int(ceil((abs(R) / accuracy) ** (1 / p) * N2))
 
@@ -34,6 +37,43 @@ def runge_rule(integrate, p, f, a, b, accuracy):
 
         N2 = N
 
+def runge_rule_gauss(p, accuracy):
+    N1 = 1
+    N2 = 2
+
+    h1 = (B - A) / N1
+
+    q1 = composite_gauss(f, A, B, SEVEN_NODES, SEVEN_WEIGHTS, h1)
+
+    count = 0
+
+    while True:
+        count += 1
+
+        h2 = (B - A) / N2
+        q2 = composite_gauss(f, A, B, SEVEN_NODES, SEVEN_WEIGHTS, h2)
+
+        R = ((q2 - q1) * h2 ** p) / (h1 ** p - h2 ** p) 
+
+        if abs(R) <= accuracy:
+            return q2, count
+
+        N = int(ceil((abs(R) / accuracy) ** (1 / p) * N2))
+
+        N1 = N2
+        h1 = h2
+        q1 = q2
+
+        N2 = N
 
 if __name__ == "__main__":
-    print(runge_rule(simpson, SIMPSON_P, f, A, B, 0.000000001) - EXACT_VALUE)
+
+    with open('report.txt', 'a') as report_file:
+        report_file.write("\n")
+        report_file.write("Runge rule (TASK 15):\n")
+
+        _, count = runge_rule_newton_cotes(COTES_15_P, 10e-15)
+        report_file.write("Newton-Cotes15: {0} steps\n".format(count))
+
+        _, count = runge_rule_gauss(GAUSS_7_P, 10e-15)
+        report_file.write("Gauss7: {0} steps\n".format(count))

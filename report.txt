@@ -258,3 +258,7 @@ Gauss6 (7); elapsed time=0.20775459999998702; result difference=6.21724893790087
 Gauss6 (8); elapsed time=0.9777864999999792; result difference=3.108624468950438e-14
 Gauss6 (9); elapsed time=3.7360388999999827; result difference=6.483702463810914e-14
 Gauss6 (10); elapsed time=15.450298499999974; result difference=4.3520742565306136e-14
+
+Runge rule (TASK 15):
+Newton-Cotes15: 4 steps
+Gauss7: 5 steps
