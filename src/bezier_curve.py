@@ -18,10 +18,10 @@ def find_bezier_curve(random_points, number_of_t):
 
     n = len(q1)
 
-    bezier_y = [sum([bernstein_polynom(n, i, t) * q for i, q in enumerate(q2)])
+    bezier_y = [sum([bernstein_polynom(n - 1, i, t) * q for i, q in enumerate(q2)])
         for t in [i / number_of_t for i in range(number_of_t)]]
 
-    bezier_x = [sum([bernstein_polynom(n, i, t) * q for i, q in enumerate(q1)])
+    bezier_x = [sum([bernstein_polynom(n - 1, i, t) * q for i, q in enumerate(q1)])
         for t in [i / number_of_t for i in range(number_of_t)]]
 
     return (bezier_x, bezier_y)
